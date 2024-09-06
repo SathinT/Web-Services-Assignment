@@ -27,7 +27,7 @@ jobs:
   deploy:
     needs: build
     runs-on: ubuntu-latest
-    steps:
+#     steps:
 #       - name: Set up AWS CLI
 #         uses: aws-actions/configure-aws-credentials@v1
 #         with:
@@ -35,9 +35,9 @@ jobs:
 #           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
 #           aws-region: us-east-1
 
-      - name: Update ECS Service
-        run: |
-          aws ecs update-service \
-            --cluster my-cluster \
-            --service my-service \
-            --force-new-deployment
+#       - name: Update ECS Service
+#         run: |
+#           aws ecs update-service \
+#             --cluster my-cluster \
+#             --service my-service \
+#             --force-new-deployment
