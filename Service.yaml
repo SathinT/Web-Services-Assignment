@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: crypto-exchange-service
+spec:
+  selector:
+    app: crypto-exchange-green # Change from blue to green after testing
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 3000
+  type: LoadBalancer
