@@ -4,7 +4,7 @@ metadata:
   name: crypto-exchange-service
 spec:
   selector:
-    app: crypto-exchange-green # Change from blue to green after testing
+    app: crypto-exchange-service
   ports:
     - protocol: TCP
       port: 80
